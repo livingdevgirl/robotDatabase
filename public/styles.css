@@ -1,0 +1,12 @@
+.body{
+text-align: center;
+
+  }.robotsAreCool{
+  display: flex;
+  flex-direction: row;
+}
+
+.robots{
+  display: flex;
+  flex-direction: row;
+}
