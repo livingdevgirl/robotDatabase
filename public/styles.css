@@ -1,12 +1,14 @@
-.body{
-text-align: center;
-
-  }.robotsAreCool{
+.robotsAreCool{
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
+  flex-wrap: wrap;
 }
 
 .robots{
+  width: 30vw;
+  height 30vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
