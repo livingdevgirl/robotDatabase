@@ -15,12 +15,22 @@ app.get('/', function(req, res){
 for (var i = 0; i < dataFile.users.length; i++) {
   if (dataFile.users[i].job === null){
         dataFile.users[i].job = "reboot me, i need work!";
+        // document.querySelector('.job').style.color = "red";
   }
 }
   res.render('home', dataFile)
+});
+
+app.get("/user/:index", function(req, res){
+  let userData = req.params.index;
+
+  for (var i = 0; i < dataFile.users.length; i++) {
+    res.render('user', dataFile.users[i])
+  }
 });
 
 app.use(express.static('public'));
 
 
 app.listen(3000);
+console.log("listening at 3000");
