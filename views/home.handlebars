@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>RoboJobs</h1>
-    <p>hire from RoboJobs and get extra awesome sauce with every recruit!</p>
+    <p>Hire from RoboJobs and get extra awesome sauce with every recruit!</p>
 
   </header>
   <section class="robotsAreCool">
@@ -18,7 +18,8 @@
       <section class="robots">
         <h2>{{name}}<h2>
 <img src="{{avatar}}" alt="">
-<h3>{{job}}</h3></section>
+<h3>{{job}}</h3>
+{{#skills}}{{.}}, {{/skills}}</section>
 {{/users}}
 </section>
 </body>
