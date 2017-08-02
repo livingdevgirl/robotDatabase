@@ -21,11 +21,11 @@ for (var i = 0; i < dataFile.users.length; i++) {
   res.render('home', dataFile)
 });
 
-app.get("/user/:index", function(req, res){
-  let userData = req.params.index;
+app.get("/user/:username", function(req, res){
+  let usernameLink = req.params.name;
 
   for (var i = 0; i < dataFile.users.length; i++) {
-    res.render('user', dataFile.users[i])
+      res.render('user', dataFile.users[i])
   }
 });
 
