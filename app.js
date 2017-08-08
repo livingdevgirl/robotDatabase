@@ -25,18 +25,14 @@ for (var i = 0; i < dataFile.users.length; i++) {
 });
 
 
-app.get("/user/:username", function(req, res){
-  let robot = req.params.username;
+app.get("/:user", function(req, res){
+  let robot = req.params.user;
   for (var i = 0; i < dataFile.users.length; i++) {
     if(dataFile.users[i].username === robot){
-     res.render('user', dataFile.users[i]);
+    res.render('user', dataFile.users[i]);
     }
   }
-
-
 });
-
-
 
 
 app.listen(3000);

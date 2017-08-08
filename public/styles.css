@@ -1,3 +1,7 @@
+body{
+  font-family: sans-serif;
+}
+
 .robotsAreCool{
   display: flex;
   flex-direction:row;
@@ -18,7 +22,31 @@
   border: 1px solid black;
 }
 
+a{
+  text-decoration: none;
+}
+.userAv{
+  align-self: center;
+  justify-content: center;
+}
 
+.userAvatar{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.robotGuy{
+  display:flex;
+  flex-wrap: wrap;
+}
+.robotdetails{
+  width: 800px;
+  border: 1px solid black;
+  margin-left: 10px;
+}
 h1{
   font-size: 42px;
   text-align: center;
@@ -27,11 +55,20 @@ h1{
 h2{
   font-size: 24px;
   text-align: center;
+  color: aqua;
 }
 
 h3{
-  font-size: 12px;
-  text-align: center;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.job{
+  font-size: 20px;
+  font-weight: lighter;
+  color: red;
+  text-align: center
 }
 
 header p{

@@ -12,20 +12,22 @@
 <a href="/">return</a>
   </header>
 
+    <section class="robotGuy">
 
-<section>
-  <section class="robotsAreCool">
-    <section class="robots">
-{{#users}}{{@username}}{{/users}}{{username}}
-{{name}}
-{{#skills}}{{.}}{{username}}{{/skills}}
-      <h2>{{username}}</h2>
 
-        <img src="{{avatar}}" alt="">
+        <img class="userAvatar" src="{{avatar}}" alt="">
+
+      <section class="robotdetails">
+        <h1>{{name}}</h1>
+
         <h3 class="job">{{job}}</h3>
-        {{#skills}}{{.}},{{/skills}}
-      </a>
+
+        <h3>Skills</h3>
+        {{#skills}} <p>{{.}}, </p>{{/skills}}
       </section>
+
+
+    </section>
 
 
 

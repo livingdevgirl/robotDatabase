@@ -16,11 +16,11 @@
   <section class="robotsAreCool">
     {{#users}}
     <section class="robots">
-    <a href="/user/{{username}}"><h2>{{name}}<h2>
+    <a href="/{{username}}"><h2>{{name}}</h2>
 
-        <img src="{{avatar}}" alt="">
+        <div><img class="userAv" src="{{avatar}}" alt=""></div>
         <h3 class="job">{{job}}</h3>
-        {{#skills}}{{.}},{{/skills}}
+        {{#skills}}{{.}}, {{/skills}}
       </section>
     </a>
     {{/users}}
