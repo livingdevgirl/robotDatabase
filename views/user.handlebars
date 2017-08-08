@@ -11,8 +11,24 @@
   <header>
 <a href="/">return</a>
   </header>
+
+
 <section>
-  <h2>{{name}}<h2>
-</section>
+  <section class="robotsAreCool">
+    <section class="robots">
+{{#users}}{{@username}}{{/users}}{{username}}
+{{name}}
+{{#skills}}{{.}}{{username}}{{/skills}}
+      <h2>{{username}}</h2>
+
+        <img src="{{avatar}}" alt="">
+        <h3 class="job">{{job}}</h3>
+        {{#skills}}{{.}},{{/skills}}
+      </a>
+      </section>
+
+
+
+
 </body>
 </html>

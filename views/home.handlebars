@@ -15,8 +15,9 @@
   </header>
   <section class="robotsAreCool">
     {{#users}}
+    <section class="robots">
     <a href="/user/{{username}}"><h2>{{name}}<h2>
-      <section class="robots">
+
         <img src="{{avatar}}" alt="">
         <h3 class="job">{{job}}</h3>
         {{#skills}}{{.}},{{/skills}}

@@ -1,19 +1,23 @@
 .robotsAreCool{
   display: flex;
+  flex-direction:row;
+  flex-grow: 1;
+  align-items: center;
   justify-content: center;
-  align-items: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .robots{
   width: 30vw;
-  height 30vw;
+  height: 30vw;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border: 1px solid black;
 }
+
 
 h1{
   font-size: 42px;
