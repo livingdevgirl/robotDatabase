@@ -17,6 +17,7 @@ app.get('/', function(req, res){
 //for loop if value key is null, target same place and assign it to string "availble for hire" console.log(dataFile)
 for (var i = 0; i < dataFile.users.length; i++) {
   if (dataFile.users[i].job === null){
+        let userStatus = "looking for work"
         dataFile.users[i].job = "reboot me, i need work!";
         // document.querySelector('.job').style.color = "red";
   }
